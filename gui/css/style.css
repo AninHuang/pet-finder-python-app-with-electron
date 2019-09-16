@@ -1,0 +1,263 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.search-container {
+    /* background-image: url(../images/antonino-visalli-iI1SSTbW218-unsplash.jpg);
+    background-size: cover;
+    background-position: 0 30%; */
+    padding: 5px 20px;
+    margin: 0 0 45px 0;
+}
+
+header h1 {
+    font-weight: 800;
+    color: #fff;
+}
+
+#pet-form {
+    padding: 30px;
+    background: hsla(0,0%,100%,.25);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 35px;
+    max-width: 800px;
+}
+
+#results {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#results > div {
+    display: inline-block!important;
+}
+
+#results > div.loading {
+    display: block!important;
+}
+
+.form-group {
+    margin-bottom: 0!important;
+}
+
+input[type="submit"] {
+    background-color: cadetblue;
+    color: #fff;
+}
+
+select {
+    text-indent: 7px;
+    font-weight: 600;
+}
+
+#diagram button:hover {
+    color: #2D2D2D;
+}
+
+/* Card */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.figure {
+    background-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 10px;
+    width: 310px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.figure * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.figure img {
+    width: 310px;
+    height: auto;
+    vertical-align: top;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.75;
+}
+
+.figure figcaption {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.figure figcaption h3 span {
+    font-weight: 800;
+}
+
+.figure .nameblock {
+    background-color: #003DAB;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    min-height: 48px;
+    min-width: 48px;
+    max-width: 200px;
+    padding: 10px 0;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.figure .nameblock span {
+    display: block;
+}
+
+.figure .nameblock .name {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.figure h3,
+.figure p {
+    margin: 0;
+    padding: 0;
+}
+
+.figure h3 {
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    font-size: 1.2rem!important;
+}
+
+.figure .hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(222, 222, 222, 0.35);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.figure a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.figure:hover .hover,
+.figure.hover .hover {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    opacity: 1;
+}
+
+.figure:hover figcaption,
+.figure.hover figcaption {
+    opacity: 0;
+}
+
+.figure:hover .nameblock,
+.figure.hover .nameblock {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+body {
+    background-color: #212121;
+}
+
+/* Loading */
+.loading {
+    margin: 10% auto;
+    text-align: center;
+}
+
+.loading p {
+    margin: 2% 0;
+    color: #464646;
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dot-flashing {
+    position: relative;
+    margin: 2% auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #7D7D7D;
+    color: #7D7D7D;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: .5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-flashing::before {
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #7D7D7D;
+    color: #7D7D7D;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing::after {
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #7D7D7D;
+    color: #7D7D7D;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+    0% {
+        background-color: #7D7D7D;
+    }
+
+    50%,
+    100% {
+        background-color: #ebe6ff;
+    }
+}
+
+.petCard-media {
+    display: block;
+    position: relative;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 230 230'%3E%3Cpath fill='%23fff' d='M115 0C51.6 0 0 51.6 0 115s51.6 115 115 115 115-51.6 115-115S178.4 0 115 0zm0 209.5c-52.2 0-94.5-42.3-94.5-94.5S62.8 20.5 115 20.5c52.2.1 94.4 42.3 94.5 94.5 0 52.2-42.3 94.5-94.5 94.5z'/%3E%3Ccircle fill='%23fff' cx='147.1' cy='69.1' r='14.1'/%3E%3Cpath fill='%23fff' d='M83 151.6c15.4 0 21.9-9.2 21.9-23.9 0-6.5-5.2-12-5.2-19-.2-8.7 6.8-15.9 15.5-16h.6c9.8 0 15.9 8.3 15.9 16 0 7.4-5.2 12.3-5.2 19.1 0 14.7 6 23.8 21.8 23.8 12.8 0 19-6.9 24.7-15.7 1.9-2.9 5-5.2 8.4-5.2 5.1 0 8 3.7 8 7.7 0 9.6-16.5 31.8-41.4 31.8-8.6 0-23.3-1.8-32.2-15.7-8.2 12.6-20.7 15.7-32.1 15.7-26 0-41.6-23-41.6-31.8 0-4.2 3.4-7.7 7.6-7.7h.2c3.5.2 6.8 2.1 8.6 5.2 5.5 9 12.3 15.7 24.5 15.7z'/%3E%3C/svg%3E"), linear-gradient(180deg, #dad5de, #eae9ed);
+    background-size: 45%, 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
