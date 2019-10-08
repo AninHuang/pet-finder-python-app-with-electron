@@ -2,8 +2,8 @@ import requests
 
 data = {
     'grant_type': 'client_credentials',
-    'client_id': 'KMk81iy5ckhe80bghqS0ZCOEnjl8pFqOeTjvM1RpLVbO7SHnTX',
-    'client_secret': 'SccFwTjSHg8WrtzYncbE79xOl0lWOqnA6TskOAf4'
+    'client_id': 'test',
+    'client_secret': 'test'
 }
 
 # 取得 token
